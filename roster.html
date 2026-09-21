@@ -10,17 +10,53 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/app.css" />
 </head>
-<body>
+<body class="roster-page">
+  <div class="progress" id="progress"></div>
+  <a class="skip" href="#shelf">Skip to roster</a>
   <nav class="top" id="site-nav"></nav>
 
-  <header class="page-hero">
-    <p class="kicker">The roster</p>
-    <h1 style="font-size:clamp(40px,6vw,72px)">Every Jumper</h1>
-    <p class="lede">One KHSAA list. No varsity / JV split. Last-year portraits first. Tap a card for the line and PG / PBR links.</p>
+  <header class="page-hero roster-hero">
+    <p class="kicker rise">The roster</p>
+    <h1 class="rise rise-2">Every Jumper</h1>
+    <div class="gold-line rise rise-3"></div>
+    <p class="lede rise rise-3">One KHSAA list. No varsity / JV split. Last-year portraits first. Drag the shelf. Tap a card for the 2026 line.</p>
+    <p class="note rise rise-3">11 returning portraits live now. The rest drop in as photos land. Sample 2026 lines on the back — real GameChanger numbers replace them in season.</p>
   </header>
-  <section class="block" style="padding-top:12px">
+
+  <section class="shelf-stage" id="shelf">
+    <div class="shelf-head">
+      <p class="kicker">The shelf</p>
+      <h2 id="shelf-name">Will Robinson</h2>
+      <p class="shelf-meta" id="shelf-meta">#7 · OF / INF · Senior · 2027</p>
+    </div>
+
+    <div class="coverflow" id="coverflow-roster" tabindex="0" aria-label="Player coverflow">
+      <div class="coverflow-track" id="coverflow-track"></div>
+      <div class="shelf-plate" aria-hidden="true"></div>
+    </div>
+
+    <div class="orbit-nav shelf-nav">
+      <button type="button" id="shelf-prev" aria-label="Previous player">‹</button>
+      <span id="shelf-count">1 / 11</span>
+      <button type="button" id="shelf-next" aria-label="Next player">›</button>
+    </div>
+  </section>
+
+  <section class="block roster-grid-block">
     <div class="wrap">
-      <div class="grid" id="roster-grid"></div>
+      <div class="roster-tools">
+        <div>
+          <p class="kicker">The cards</p>
+          <h2>Flip for the line.</h2>
+        </div>
+        <div class="chips filter-chips" id="class-filters" role="tablist">
+          <button class="chip is-on" data-year="all" type="button">All</button>
+          <button class="chip" data-year="2027" type="button">2027</button>
+          <button class="chip" data-year="2028" type="button">2028</button>
+          <button class="chip" data-year="2029" type="button">2029</button>
+        </div>
+      </div>
+      <div id="roster-sections"></div>
     </div>
   </section>
 

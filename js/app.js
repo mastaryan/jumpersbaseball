@@ -61,8 +61,12 @@ function cardHTML(item) {
       ? `<a class="mini" href="${l.href}" target="_blank" rel="noreferrer">${l.label}</a>`
       : `<span class="mini">${l.label}</span>`
   ).join("");
+  const crop = item.crop ? ` crop-${item.crop}` : "";
+  const sample = item.backLine && String(item.backLine).toLowerCase().includes("sample")
+    ? `<span class="sample-chip">Sample line</span>`
+    : "";
   return `
-    <article class="card" data-flip>
+    <article class="card${crop}" data-flip data-id="${item.id || ""}" data-year="${item.classYear || ""}">
       <div class="card-inner">
         <div class="face">
           ${item.number ? `<span class="num">${item.number}</span>` : ""}
@@ -73,8 +77,9 @@ function cardHTML(item) {
           </div>
         </div>
         <div class="face back">
+          ${sample}
           <div class="name">${item.backTitle || item.name}</div>
-          <div class="pos" style="margin-bottom:12px">${item.backLine || ""}</div>
+          <div class="pos" style="margin-bottom:12px">${item.backLine || item.featured || ""}</div>
           ${stats}
           <div class="links-row">${links}</div>
         </div>
@@ -251,6 +256,143 @@ function bindOrbit() {
   layout();
 }
 
+function flowCardHTML(item) {
+  const crop = item.crop === "wide" ? " crop-wide" : "";
+  return `
+    <article class="flow-card${crop}" data-id="${item.id}">
+      ${item.number ? `<span class="num">${item.number}</span>` : ""}
+      <img src="${item.photo}" alt="${item.name}" />
+      <div class="flow-info">
+        <strong>${item.name}</strong>
+        <em>${item.pos} · ${item.classLabel}</em>
+      </div>
+    </article>
+  `;
+}
+
+function bindRosterCoverflow(players) {
+  const stage = document.getElementById("coverflow-roster");
+  const track = document.getElementById("coverflow-track");
+  if (!stage || !track || !players.length) return;
+
+  track.innerHTML = players.map(flowCardHTML).join("");
+  const cards = [...track.querySelectorAll(".flow-card")];
+  const nameEl = document.getElementById("shelf-name");
+  const metaEl = document.getElementById("shelf-meta");
+  const countEl = document.getElementById("shelf-count");
+  let index = 0;
+  const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const mobile = () => window.matchMedia("(max-width: 800px)").matches;
+
+  const paint = () => {
+    const p = players[index];
+    if (nameEl) nameEl.textContent = p.name;
+    if (metaEl) metaEl.textContent = `#${p.number} · ${p.pos} · ${p.classLabel} · ${p.classYear}`;
+    if (countEl) countEl.textContent = `${index + 1} / ${players.length}`;
+
+    if (mobile()) {
+      cards.forEach((c, i) => c.classList.toggle("is-lead", i === index));
+      cards[index]?.scrollIntoView({ inline: "center", block: "nearest", behavior: reduced ? "auto" : "smooth" });
+      return;
+    }
+
+    const spacing = Math.min(195, stage.clientWidth * 0.16);
+    cards.forEach((card, i) => {
+      const offset = i - index;
+      const abs = Math.abs(offset);
+      const rot = offset * -32;
+      const x = offset * spacing;
+      const z = -abs * 90;
+      const scale = Math.max(0.62, 1 - abs * 0.11);
+      card.classList.toggle("is-lead", i === index);
+      card.classList.toggle("is-away", abs > 4);
+      card.style.zIndex = String(40 - abs);
+      card.style.opacity = abs > 4 ? "0" : String(1 - abs * 0.12);
+      card.style.transform = `translate3d(${x}px, ${abs * 10}px, ${z}px) rotateY(${rot}deg) scale(${scale})`;
+    });
+  };
+
+  const go = (dir) => {
+    index = (index + dir + players.length) % players.length;
+    paint();
+  };
+
+  document.getElementById("shelf-prev")?.addEventListener("click", () => go(-1));
+  document.getElementById("shelf-next")?.addEventListener("click", () => go(1));
+  cards.forEach((card, i) => {
+    card.addEventListener("click", () => {
+      if (i === index) {
+        document.querySelector(`.card[data-id="${players[i].id}"]`)?.scrollIntoView({ behavior: "smooth", block: "center" });
+        return;
+      }
+      index = i;
+      paint();
+    });
+  });
+
+  stage.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight") { e.preventDefault(); go(1); }
+    if (e.key === "ArrowLeft") { e.preventDefault(); go(-1); }
+  });
+
+  let dragging = false;
+  let startX = 0;
+  let lastX = 0;
+  stage.addEventListener("pointerdown", (e) => { dragging = true; startX = lastX = e.clientX; stage.setPointerCapture(e.pointerId); });
+  stage.addEventListener("pointermove", (e) => { if (dragging) lastX = e.clientX; });
+  stage.addEventListener("pointerup", () => {
+    if (!dragging) return;
+    dragging = false;
+    const dx = lastX - startX;
+    if (dx > 50) go(-1);
+    else if (dx < -50) go(1);
+  });
+
+  window.addEventListener("resize", paint);
+  paint();
+}
+
+function bindClassFilters() {
+  const bar = document.getElementById("class-filters");
+  if (!bar) return;
+  bar.addEventListener("click", (e) => {
+    const btn = e.target.closest("[data-year]");
+    if (!btn) return;
+    bar.querySelectorAll("[data-year]").forEach((b) => b.classList.toggle("is-on", b === btn));
+    const year = btn.dataset.year;
+    document.querySelectorAll(".roster-class").forEach((sec) => {
+      sec.hidden = year !== "all" && sec.dataset.year !== year;
+    });
+  });
+}
+
+async function renderRosterPage() {
+  const host = document.getElementById("roster-sections");
+  if (!host) return;
+  try {
+    const players = await loadJSON("data/roster.json");
+    const order = ["2027", "2028", "2029"];
+    const labels = { "2027": "Seniors", "2028": "Juniors", "2029": "Sophomores" };
+    host.innerHTML = order.map((year) => {
+      const group = players.filter((p) => p.classYear === year);
+      if (!group.length) return "";
+      return `
+        <div class="roster-class" data-year="${year}">
+          <h3>${labels[year] || year}</h3>
+          <p class="meta">Class of ${year} · ${group.length} ${group.length === 1 ? "portrait" : "portraits"}</p>
+          <div class="grid">${group.map(cardHTML).join("")}</div>
+        </div>
+      `;
+    }).join("");
+    bindFlips(host);
+    bindTilt(host);
+    bindClassFilters();
+    bindRosterCoverflow(players);
+  } catch (e) {
+    host.innerHTML = `<p class="meta">Serve this folder over http to load cards.</p>`;
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   mountChrome();
   bindFlips();
@@ -258,5 +400,5 @@ document.addEventListener("DOMContentLoaded", () => {
   bindMotion();
   bindOrbit();
   renderGrid("alumni-grid", "data/alumni.json");
-  renderGrid("roster-grid", "data/roster.json");
+  renderRosterPage();
 });

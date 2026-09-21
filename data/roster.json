@@ -1,40 +1,233 @@
 [
   {
-    "name": "Photo coming",
-    "number": "—",
-    "line": "Last year’s portraits load here",
-    "photo": "",
-    "backTitle": "KHSAA roster",
-    "backLine": "One list. No JV split.",
+    "id": "will-robinson",
+    "name": "Will Robinson",
+    "number": "7",
+    "pos": "OF / INF",
+    "classYear": "2027",
+    "classLabel": "Senior",
+    "batsThrows": "R / R",
+    "photo": "assets/img/team/WillRobinson.jpg",
+    "crop": "portrait",
+    "line": "OF / INF · Senior",
+    "backTitle": "2026 Somerset",
+    "backLine": "Sample line · last year at Charlie Taylor",
+    "featured": "OF that covers both gaps",
     "stats": [
-      ["2026 line", "When season starts"],
-      ["Career", "Somerset sheet"],
-      ["Links", "PG / PBR when live"]
+      ["AVG", ".286"],
+      ["H / RBI", "24 / 18"],
+      ["SB", "9"]
     ],
     "links": [{ "label": "PG" }, { "label": "PBR" }]
   },
   {
+    "id": "john-henderson",
     "name": "John Henderson",
     "number": "16",
-    "line": "INF / P",
-    "photo": "",
-    "backTitle": "2026 line",
-    "backLine": "Current stats replace this in season",
+    "pos": "INF / P",
+    "classYear": "2028",
+    "classLabel": "Junior",
+    "batsThrows": "R / R",
+    "photo": "assets/img/team/JohnHenderson.jpg",
+    "crop": "portrait",
+    "line": "INF / P · Junior",
+    "backTitle": "2026 Somerset",
+    "backLine": "Sample line · last year at Charlie Taylor",
+    "featured": "Two-way middle of the diamond",
     "stats": [
-      ["ERA", "—"],
-      ["IP", "—"],
-      ["K", "—"]
+      ["AVG", ".214"],
+      ["IP", "22.0"],
+      ["ERA", "6.36"]
     ],
     "links": [{ "label": "PG" }, { "label": "PBR" }]
   },
   {
-    "name": "Roster names next",
-    "number": "",
-    "line": "Paste the KHSAA list",
-    "photo": "",
-    "backTitle": "Same card object",
-    "backLine": "Photo + number + pos",
-    "stats": [["Status", "Waiting on last-year photos"]],
-    "links": []
+    "id": "miles-strunk",
+    "name": "Miles Strunk",
+    "number": "18",
+    "pos": "3B / P",
+    "classYear": "2028",
+    "classLabel": "Junior",
+    "batsThrows": "R / R",
+    "photo": "assets/img/team/MilesStrunk.jpg",
+    "crop": "wide",
+    "line": "3B / P · Junior",
+    "backTitle": "2026 Somerset",
+    "backLine": "Sample line · last year at Charlie Taylor",
+    "featured": "Corner bat with a starter's arm",
+    "stats": [
+      ["AVG", ".190"],
+      ["IP", "10.0"],
+      ["K", "8"]
+    ],
+    "links": [{ "label": "PG" }, { "label": "PBR" }]
+  },
+  {
+    "id": "jacob-estep",
+    "name": "Jacob Estep",
+    "number": "19",
+    "pos": "OF / P",
+    "classYear": "2028",
+    "classLabel": "Junior",
+    "batsThrows": "R / R",
+    "photo": "assets/img/team/JacobEstep.jpg",
+    "crop": "portrait",
+    "line": "OF / P · Junior",
+    "backTitle": "2026 Somerset",
+    "backLine": "Sample line · last year at Charlie Taylor",
+    "featured": "Athlete in the grass and on the bump",
+    "stats": [
+      ["AVG", ".250"],
+      ["XBH", "4"],
+      ["K", "11"]
+    ],
+    "links": [{ "label": "PG" }, { "label": "PBR" }]
+  },
+  {
+    "id": "carter-litteral",
+    "name": "Carter Litteral",
+    "number": "6",
+    "pos": "LHP / OF",
+    "classYear": "2028",
+    "classLabel": "Junior",
+    "batsThrows": "L / L",
+    "photo": "assets/img/team/CarterLitteral.jpg",
+    "crop": "wide",
+    "line": "LHP / OF · Junior",
+    "backTitle": "2026 Somerset",
+    "backLine": "Sample line · last year at Charlie Taylor",
+    "featured": "Lefty out of the pen and in left",
+    "stats": [
+      ["IP", "6.1"],
+      ["ERA", "3.32"],
+      ["K", "7"]
+    ],
+    "links": [{ "label": "PG" }, { "label": "PBR" }]
+  },
+  {
+    "id": "gunnar-strunk",
+    "name": "Gunnar Strunk",
+    "number": "33",
+    "pos": "LHP / 1B",
+    "classYear": "2028",
+    "classLabel": "Junior",
+    "batsThrows": "L / L",
+    "photo": "assets/img/team/GunnarStrunk.jpg",
+    "crop": "portrait",
+    "line": "LHP / 1B · Junior",
+    "backTitle": "2026 Somerset",
+    "backLine": "Sample line · last year at Charlie Taylor",
+    "featured": "Left-handed starter look",
+    "stats": [
+      ["IP", "13.2"],
+      ["ERA", "4.10"],
+      ["K", "9"]
+    ],
+    "links": [{ "label": "PG" }, { "label": "PBR" }]
+  },
+  {
+    "id": "walker-stephens",
+    "name": "Walker Stephens",
+    "number": "24",
+    "pos": "RHP / OF",
+    "classYear": "2028",
+    "classLabel": "Junior",
+    "batsThrows": "R / R",
+    "photo": "assets/img/team/WalkerStephens.jpg",
+    "crop": "wide",
+    "line": "RHP / OF · Junior",
+    "backTitle": "2026 Somerset",
+    "backLine": "Sample line · last year at Charlie Taylor",
+    "featured": "Long righty, 6-4 frame",
+    "stats": [
+      ["IP", "8.0"],
+      ["ERA", "3.38"],
+      ["K", "10"]
+    ],
+    "links": [{ "label": "PG" }, { "label": "PBR" }]
+  },
+  {
+    "id": "charlie-adams",
+    "name": "Charlie Adams",
+    "number": "13",
+    "pos": "C",
+    "classYear": "2029",
+    "classLabel": "Sophomore",
+    "batsThrows": "R / R",
+    "photo": "assets/img/team/CharlieAdams.jpg",
+    "crop": "wide",
+    "line": "C · Sophomore",
+    "backTitle": "2026 Somerset",
+    "backLine": "Sample line · last year at Charlie Taylor",
+    "featured": "The glove behind the plate",
+    "stats": [
+      ["GP", "12"],
+      ["AVG", ".222"],
+      ["CS%", "31"]
+    ],
+    "links": [{ "label": "PG" }, { "label": "PBR" }]
+  },
+  {
+    "id": "micah-sizemore",
+    "name": "Micah Sizemore",
+    "number": "8",
+    "pos": "INF",
+    "classYear": "2029",
+    "classLabel": "Sophomore",
+    "batsThrows": "R / R",
+    "photo": "assets/img/team/MicahSizemore.jpg",
+    "crop": "wide",
+    "line": "INF · Sophomore",
+    "backTitle": "2026 Somerset",
+    "backLine": "Sample line · last year at Charlie Taylor",
+    "featured": "Energy in the infield",
+    "stats": [
+      ["GP", "8"],
+      ["SB", "4"],
+      ["OBP", ".360"]
+    ],
+    "links": [{ "label": "PG" }, { "label": "PBR" }]
+  },
+  {
+    "id": "asher-weddle",
+    "name": "Asher Weddle",
+    "number": "15",
+    "pos": "INF / OF",
+    "classYear": "2029",
+    "classLabel": "Sophomore",
+    "batsThrows": "R / R",
+    "photo": "assets/img/team/AsherWeddle.jpg",
+    "crop": "portrait",
+    "line": "INF / OF · Sophomore",
+    "backTitle": "2026 Somerset",
+    "backLine": "Sample line · last year at Charlie Taylor",
+    "featured": "Can play both sides of the dirt",
+    "stats": [
+      ["AVG", ".245"],
+      ["H", "14"],
+      ["BB", "11"]
+    ],
+    "links": [{ "label": "PG" }, { "label": "PBR" }]
+  },
+  {
+    "id": "kevin-wilson",
+    "name": "Kevin Wilson",
+    "number": "0",
+    "pos": "INF / OF",
+    "classYear": "2029",
+    "classLabel": "Sophomore",
+    "batsThrows": "R / R",
+    "photo": "assets/img/team/KevinWilson.jpg",
+    "crop": "wide",
+    "line": "INF / OF · Sophomore",
+    "backTitle": "2026 Somerset",
+    "backLine": "Sample line · confirm number and class",
+    "featured": "New look in the middle",
+    "stats": [
+      ["AVG", ".220"],
+      ["H", "9"],
+      ["SB", "5"]
+    ],
+    "links": [{ "label": "PG" }, { "label": "PBR" }]
   }
 ]
