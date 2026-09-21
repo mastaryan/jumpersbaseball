@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parents · Jumpers Baseball</title>
+  <link rel="icon" href="assets/img/brand/power-s.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <nav class="top" id="site-nav"></nav>
+
+  <header class="page-hero">
+    <p class="kicker">The room</p>
+    <h1 style="font-size:clamp(40px,6vw,72px)">Parents</h1>
+    <p class="lede">Dates, forms, and how to reach the staff. No Google login required.</p>
+  </header>
+  <section class="block" style="padding-top:12px">
+    <div class="wrap split">
+      <article class="panel">
+        <h3>Need something?</h3>
+        <form class="stack" action="https://formspree.io/f/REPLACE_ME" method="POST">
+          <label>Name<input name="name" required></label>
+          <label>Player<input name="player"></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </article>
+      <article class="panel">
+        <h3>On the wall</h3>
+        <p class="meta">Physicals, calendar, booster notes, and ride reminders go here as PDFs. Drop files when you have them.</p>
+        <div class="chips"><span class="chip">KHSAA</span><span class="chip">Boosters</span><span class="chip">Calendar</span></div>
+      </article>
+    </div>
+  </section>
+
+  <footer class="site" id="site-foot"></footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

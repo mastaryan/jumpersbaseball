@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shop · Jumpers Baseball</title>
+  <link rel="icon" href="assets/img/brand/power-s.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <nav class="top" id="site-nav"></nav>
+
+  <header class="page-hero">
+    <p class="kicker">The shop</p>
+    <h1 style="font-size:clamp(40px,6vw,72px)">The Home Cap</h1>
+    <p class="lede">Richardson hat. $25 for now. Reserve the size. Pay cash to Coach Denney or check to SHS Baseball Boosters.</p>
+  </header>
+  <section class="block" style="padding-top:12px">
+    <div class="wrap shop-grid">
+      <div class="hat-ph">
+        <img src="assets/img/brand/cecil.png" alt="" />
+        Photo this week
+      </div>
+      <div>
+        <form class="stack" action="https://formspree.io/f/REPLACE_ME" method="POST">
+          <label>Name<input name="name" required></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Phone<input name="phone"></label>
+          <label>Size
+            <select name="size">
+              <option>S/M</option>
+              <option>L/XL</option>
+              <option>Adjustable</option>
+            </select>
+          </label>
+          <label>Qty<input type="number" name="qty" value="1" min="1"></label>
+          <button class="btn" type="submit">Reserve</button>
+        </form>
+        <p class="note">Jerseys and shirts come later. Stripe when the booster club is ready.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site" id="site-foot"></footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

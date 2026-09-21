@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sponsors · Jumpers Baseball</title>
+  <link rel="icon" href="assets/img/brand/power-s.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <nav class="top" id="site-nav"></nav>
+
+  <header class="page-hero">
+    <p class="kicker">Partners</p>
+    <h1 style="font-size:clamp(40px,6vw,72px)">Sponsors</h1>
+    <p class="lede">Fence signs and program partners. Renewal for the coming season, plus a door for new names.</p>
+  </header>
+  <section class="block" style="padding-top:12px">
+    <div class="wrap split">
+      <article class="panel">
+        <h3>On the fence</h3>
+        <p class="meta">Sign photos land here as a clean grid — same card object as the roster. Send the board shots when you have them.</p>
+      </article>
+      <article class="panel">
+        <h3>Renew or join</h3>
+        <p class="meta">Formspree intent form. We follow up. No Google login.</p>
+        <form class="stack" action="https://formspree.io/f/REPLACE_ME" method="POST">
+          <label>Name<input name="name" required></label>
+          <label>Business<input name="business"></label>
+          <label>Email<input type="email" name="email" required></label>
+          <label>Interest
+            <select name="interest">
+              <option>Renew existing sign</option>
+              <option>New fence sign</option>
+              <option>Program / other</option>
+            </select>
+          </label>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </article>
+    </div>
+  </section>
+
+  <footer class="site" id="site-foot"></footer>
+  <script src="js/app.js"></script>
+</body>
+</html>

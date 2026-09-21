@@ -1,0 +1,40 @@
+[
+  {
+    "name": "Photo coming",
+    "number": "—",
+    "line": "Last year’s portraits load here",
+    "photo": "",
+    "backTitle": "KHSAA roster",
+    "backLine": "One list. No JV split.",
+    "stats": [
+      ["2026 line", "When season starts"],
+      ["Career", "Somerset sheet"],
+      ["Links", "PG / PBR when live"]
+    ],
+    "links": [{ "label": "PG" }, { "label": "PBR" }]
+  },
+  {
+    "name": "John Henderson",
+    "number": "16",
+    "line": "INF / P",
+    "photo": "",
+    "backTitle": "2026 line",
+    "backLine": "Current stats replace this in season",
+    "stats": [
+      ["ERA", "—"],
+      ["IP", "—"],
+      ["K", "—"]
+    ],
+    "links": [{ "label": "PG" }, { "label": "PBR" }]
+  },
+  {
+    "name": "Roster names next",
+    "number": "",
+    "line": "Paste the KHSAA list",
+    "photo": "",
+    "backTitle": "Same card object",
+    "backLine": "Photo + number + pos",
+    "stats": [["Status", "Waiting on last-year photos"]],
+    "links": []
+  }
+]

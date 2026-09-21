@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Jacob Denney",
+    "role": "Head Coach",
+    "years": "2026–",
+    "photo": "assets/img/coaches/denney.jpg"
+  },
+  {
+    "name": "Ryan Sizemore",
+    "role": "Assistant Coach",
+    "years": "2026–",
+    "photo": ""
+  },
+  {
+    "name": "Davin Roberts",
+    "role": "Assistant Coach",
+    "years": "2026–",
+    "photo": ""
+  },
+  {
+    "name": "Chance Stayton",
+    "role": "Assistant · Catching",
+    "years": "2026–",
+    "photo": "assets/img/coaches/chance-stayton.jpg"
+  },
+  {
+    "name": "Chris Stayton",
+    "role": "Assistant Coach",
+    "years": "2026–",
+    "photo": "assets/img/coaches/chris-stayton.jpg"
+  }
+]
