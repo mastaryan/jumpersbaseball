@@ -1,32 +1,122 @@
-[
-  {
-    "name": "Jacob Denney",
-    "role": "Head Coach",
-    "years": "2026–",
-    "photo": "assets/img/coaches/denney.jpg"
-  },
-  {
-    "name": "Ryan Sizemore",
-    "role": "Assistant Coach",
-    "years": "2026–",
-    "photo": ""
-  },
-  {
-    "name": "Davin Roberts",
-    "role": "Assistant Coach",
-    "years": "2026–",
-    "photo": ""
-  },
-  {
-    "name": "Chance Stayton",
-    "role": "Assistant · Catching",
-    "years": "2026–",
-    "photo": "assets/img/coaches/chance-stayton.jpg"
-  },
-  {
-    "name": "Chris Stayton",
-    "role": "Assistant Coach",
-    "years": "2026–",
-    "photo": "assets/img/coaches/chris-stayton.jpg"
-  }
-]
+{
+  "staff": [
+    {
+      "id": "denney",
+      "name": "Jacob Denney",
+      "role": "Head Coach",
+      "years": "2026–",
+      "focus": "The chair",
+      "photo": "assets/img/coaches/denney.jpg",
+      "poster": "assets/img/coaches/denney-poster.jpg",
+      "line": "Head Coach · 2026–",
+      "backTitle": "The staff",
+      "backLine": "Named head coach for the 2027 season. Picture-day portrait replaces the announcement still.",
+      "bio": "The new chair. Announced as Briar Jumper head baseball coach for 2026–. The rest of the staff works under this seat.",
+      "stats": [
+        ["Seat", "Head Coach"],
+        ["Season", "2027"],
+        ["Years", "2026–"]
+      ]
+    },
+    {
+      "id": "sizemore",
+      "name": "Ryan Sizemore",
+      "role": "Assistant Coach",
+      "years": "2026–",
+      "focus": "The staff",
+      "photo": "assets/img/coaches/sizemore.jpg",
+      "poster": "assets/img/coaches/sizemore-poster.jpg",
+      "line": "Assistant Coach · 2026–",
+      "backTitle": "The staff",
+      "backLine": "Announcement graphic for now. Individual portrait after picture day.",
+      "bio": "Assistant coach. Somerset family. Individual portrait lands after picture day — this is the announcement still.",
+      "stats": [
+        ["Seat", "Assistant"],
+        ["Season", "2027"],
+        ["Years", "2026–"]
+      ]
+    },
+    {
+      "id": "davin",
+      "name": "Davin Roberts",
+      "role": "Assistant Coach",
+      "years": "2026–",
+      "focus": "The staff",
+      "photo": "assets/img/coaches/davin-roberts.jpg",
+      "poster": "assets/img/coaches/davin-poster.jpg",
+      "line": "Assistant Coach · 2026–",
+      "backTitle": "The staff",
+      "backLine": "Announcement graphic for now. Individual portrait after picture day.",
+      "bio": "Assistant coach. The family still is the stand-in until picture day gives us a single frame.",
+      "stats": [
+        ["Seat", "Assistant"],
+        ["Season", "2027"],
+        ["Years", "2026–"]
+      ]
+    },
+    {
+      "id": "chance",
+      "name": "Chance Stayton",
+      "role": "Assistant · Catching",
+      "years": "2026–",
+      "focus": "Catching",
+      "photo": "assets/img/coaches/chance-stayton.jpg",
+      "poster": "assets/img/coaches/chance-stayton-poster.jpg",
+      "line": "Assistant · Catching · 2026–",
+      "backTitle": "The staff",
+      "backLine": "Catching. Picture-day portrait replaces the announcement still.",
+      "bio": "Assistant coach, catching. The announcement graphic holds the card until picture day.",
+      "stats": [
+        ["Seat", "Catching"],
+        ["Season", "2027"],
+        ["Years", "2026–"]
+      ]
+    },
+    {
+      "id": "chris",
+      "name": "Chris Stayton",
+      "role": "Assistant Coach",
+      "years": "2026–",
+      "focus": "The staff",
+      "photo": "assets/img/coaches/chris-stayton.jpg",
+      "poster": "assets/img/coaches/chris-stayton-poster.jpg",
+      "line": "Assistant Coach · 2026–",
+      "backTitle": "The staff",
+      "backLine": "Picture-day portrait replaces the announcement still.",
+      "bio": "Assistant coach. Same Stayton line. Individual portrait after picture day.",
+      "stats": [
+        ["Seat", "Assistant"],
+        ["Season", "2027"],
+        ["Years", "2026–"]
+      ]
+    }
+  ],
+  "former": [
+    {
+      "id": "grundy",
+      "name": "Phillip Grundy",
+      "role": "Former Head Coach",
+      "years": "Through 2026",
+      "photo": "assets/img/coaches/grundy.jpg",
+      "bio": "The standard the program still plays under. Hall of Fame inductee, 2024. 515 career wins. 13 district titles. 2 region titles.",
+      "stats": [
+        ["HOF", "2024"],
+        ["Wins", "515"],
+        ["District", "13"],
+        ["Region", "2"]
+      ]
+    },
+    {
+      "id": "taylor",
+      "name": "Charlie Taylor",
+      "role": "Former Head Coach",
+      "years": "The field",
+      "photo": "",
+      "bio": "The field bears his name. Earlier chapters and the coaches between Taylor and Grundy land here when the years lock.",
+      "stats": [
+        ["Field", "Charlie Taylor Field"],
+        ["Years", "To confirm"]
+      ]
+    }
+  ]
+}

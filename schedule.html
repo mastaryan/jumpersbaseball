@@ -10,27 +10,55 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/app.css" />
 </head>
-<body>
+<body class="sched-page">
+  <div class="progress" id="progress"></div>
+  <a class="skip" href="#next-game">Skip to next game</a>
   <nav class="top" id="site-nav"></nav>
 
-  <header class="page-hero">
-    <p class="kicker">The rail</p>
-    <h1 style="font-size:clamp(40px,6vw,72px)">Schedule</h1>
-    <p class="lede">Next game is the hero. When the day passes, that card archives with the score. 2027 dates drop in when you send them.</p>
+  <header class="page-hero roster-hero">
+    <p class="kicker rise">The rail</p>
+    <h1 class="rise rise-2">2027</h1>
+    <div class="gold-line rise rise-3"></div>
+    <p class="lede rise rise-3">Next game sits up front and moves itself when the day passes. Subscribe the calendar so a change on this page can reach the phone.</p>
   </header>
-  <section class="block" style="padding-top:12px">
-    <div class="wrap split">
-      <article class="panel">
-        <p class="meta">Upcoming</p>
-        <h3>TBD</h3>
-        <p class="meta">Opponent · time · Charlie Taylor Field or the road.</p>
-        <div class="chips"><span class="chip">Auto-advances</span></div>
-      </article>
-      <article class="panel">
-        <p class="kicker">Archive</p>
-        <h3>2026 season</h3>
-        <p class="meta">16–23 overall · 4–4 district. Full cards with boxes land as we import GameChanger / MaxPreps snapshots.</p>
-      </article>
+
+  <section class="cal-bar">
+    <div class="wrap cal-bar-inner">
+      <div>
+        <p class="kicker">Your phone</p>
+        <p class="meta" id="cal-revised">Revised Sept 23, 2026 · printed sheet page 1</p>
+      </div>
+      <div class="cal-actions">
+        <a class="btn" id="cal-apple" href="schedule.ics">Add to iPhone</a>
+        <a class="btn ghost" id="cal-google" href="schedule.ics" target="_blank" rel="noreferrer">Add to Google / Android</a>
+        <a class="btn ghost" href="schedule.ics" download="jumpers-2027.ics">Download .ics</a>
+      </div>
+    </div>
+    <p class="cal-note wrap">Subscribe — do not import once. A subscription refetches this file, so a new opponent or time can land on the phone after we revise the sheet. An import is a snapshot and will not move.</p>
+  </section>
+
+  <section class="sched-hero" id="next-game">
+    <div class="wrap" id="hero-slot"></div>
+  </section>
+
+  <section class="block sched-list-block">
+    <div class="wrap">
+      <div class="roster-tools">
+        <div>
+          <p class="kicker">The rest of the page</p>
+          <h2>Through May 21.</h2>
+        </div>
+        <div class="filter-chips" id="sched-filters">
+          <button class="chip is-on" type="button" data-filter="all">All</button>
+          <button class="chip" type="button" data-filter="home">Home</button>
+          <button class="chip" type="button" data-filter="away">Away</button>
+          <button class="chip" type="button" data-filter="district">District</button>
+          <button class="chip" type="button" data-filter="varsity">Varsity</button>
+          <button class="chip" type="button" data-filter="jv">JV</button>
+        </div>
+      </div>
+      <div class="sched-list" id="sched-list"></div>
+      <p class="note" style="margin-top:28px">Key from the sheet: ** scrimmage · ^^ Senior Night · ^* Alumni Night · District is the Pulaski and Casey series. Prom is May 1. Destin times still TBD.</p>
     </div>
   </section>
 

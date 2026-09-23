@@ -10,54 +10,57 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/app.css" />
 </head>
-<body>
+<body class="coaches-page">
+  <div class="progress" id="progress"></div>
+  <a class="skip" href="#carousel">Skip to staff</a>
   <nav class="top" id="site-nav"></nav>
 
-  <header class="page-hero">
-    <p class="kicker">The staff</p>
-    <h1 style="font-size:clamp(40px,6vw,72px)">Coaches</h1>
-    <p class="lede">Current staff first. Former head coaches below as dates lock.</p>
+  <header class="page-hero roster-hero">
+    <p class="kicker rise">The staff</p>
+    <h1 class="rise rise-2">The carousel</h1>
+    <div class="gold-line rise rise-3"></div>
+    <p class="lede rise rise-3">Five chairs on a ring. It turns on its own. Drag it. Click a card to lock the front. Announcement graphics until picture day.</p>
   </header>
-  <section class="block" style="padding-top:12px">
+
+  <section class="cyl-stage" id="carousel">
+    <div class="cyl-readout">
+      <p class="kicker">Front of the ring</p>
+      <h2 id="coach-name">Jacob Denney</h2>
+      <p class="shelf-meta" id="coach-meta">Head Coach · 2026–</p>
+    </div>
+
+    <div class="cyl-scene" id="cyl-scene" tabindex="0" aria-label="Staff 3D carousel">
+      <div class="cyl-ring" id="cyl-ring"></div>
+      <div class="cyl-floor" aria-hidden="true"></div>
+    </div>
+
+    <div class="orbit-nav shelf-nav">
+      <button type="button" id="coach-prev" aria-label="Previous coach">‹</button>
+      <span id="queue-count">1 / 5</span>
+      <button type="button" id="coach-next" aria-label="Next coach">›</button>
+    </div>
+    <p class="cyl-hint">Drag the ring · hover pauses the spin</p>
+  </section>
+
+  <section class="block roster-grid-block">
     <div class="wrap">
-      <div class="grid grid-5">
-        <figure class="coach">
-          <img src="assets/img/coaches/denney.jpg" alt="Jacob Denney" />
-          <figcaption><strong>Jacob Denney</strong><em>Head Coach · 2026–</em></figcaption>
-        </figure>
-        <figure class="coach">
-          <div class="ph">PHOTO</div>
-          <figcaption><strong>Ryan Sizemore</strong><em>Assistant Coach</em></figcaption>
-        </figure>
-        <figure class="coach">
-          <div class="ph">PHOTO</div>
-          <figcaption><strong>Davin Roberts</strong><em>Assistant Coach</em></figcaption>
-        </figure>
-        <figure class="coach">
-          <img src="assets/img/coaches/chance-stayton.jpg" alt="Chance Stayton" />
-          <figcaption><strong>Chance Stayton</strong><em>Assistant · Catching</em></figcaption>
-        </figure>
-        <figure class="coach">
-          <img src="assets/img/coaches/chris-stayton.jpg" alt="Chris Stayton" />
-          <figcaption><strong>Chris Stayton</strong><em>Assistant Coach</em></figcaption>
-        </figure>
+      <div class="roster-tools">
+        <div>
+          <p class="kicker">The cards</p>
+          <h2>Flip the staff.</h2>
+        </div>
+        <p class="meta">Same object as the roster. Back of the card holds the seat and the season.</p>
       </div>
+      <div class="grid grid-5" id="coach-cards"></div>
     </div>
   </section>
-  <section class="block" style="padding-top:0">
+
+  <section class="block former-block">
     <div class="wrap">
-      <p class="kicker">Former head coaches</p>
-      <h2>The line</h2>
-      <div class="split" style="margin-top:28px">
-        <article class="panel">
-          <h3>Phillip Grundy</h3>
-          <p class="meta">Head coach through 2026. Dates to be confirmed. The standard the program still plays under.</p>
-        </article>
-        <article class="panel">
-          <h3>Charlie Taylor</h3>
-          <p class="meta">The field bears his name. Earlier chapters and the 1–2 coaches between Taylor and Grundy land when the years are locked.</p>
-        </article>
-      </div>
+      <p class="kicker">The line</p>
+      <h2>Former head coaches</h2>
+      <p class="lede">Grundy is locked from the program graphic. Taylor is the field. Everyone between them lands when the years lock.</p>
+      <div class="former-grid" id="former-grid"></div>
     </div>
   </section>
 

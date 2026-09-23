@@ -1,0 +1,41 @@
+[
+  {
+    "id": "tri-color",
+    "name": "Tri-Color",
+    "price": "$30",
+    "amount": 30,
+    "status": "ready",
+    "line": "White crown · purple bill · Power S",
+    "backLine": "Gold Kentucky · Richardson PTS30",
+    "front": "assets/img/shop/home-s-front.jpg",
+    "back": "assets/img/shop/home-s-back.jpg",
+    "model": "Richardson PTS30 Flexfit",
+    "sizes": ["XS/S", "S/M", "L/XL"]
+  },
+  {
+    "id": "night-purple",
+    "name": "Night Purple",
+    "price": "$30",
+    "amount": 30,
+    "status": "arriving",
+    "line": "Solid purple · white Power S · gold outline",
+    "backLine": "Fitted · perforated back · Kentucky mark",
+    "front": "assets/img/shop/purple-front.jpg",
+    "back": "assets/img/shop/purple-back.jpg",
+    "model": "Richardson PTS30 Flexfit · preview",
+    "sizes": ["XS/S", "S/M", "L/XL"]
+  },
+  {
+    "id": "cecil",
+    "name": "Cecil",
+    "price": "$40",
+    "amount": 40,
+    "status": "ready",
+    "line": "Cream crown · purple bill · Cecil",
+    "backLine": "American flag · Richardson PTS30",
+    "front": "assets/img/shop/cecil-front.jpg",
+    "back": "assets/img/shop/cecil-back.jpg",
+    "model": "Richardson PTS30 Flexfit",
+    "sizes": ["XS/S", "S/M", "L/XL"]
+  }
+]

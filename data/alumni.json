@@ -1,11 +1,15 @@
 [
   {
+    "id": "colyer-white",
     "name": "Colyer White",
     "number": "",
     "line": "Lindsey Wilson University",
     "photo": "assets/img/alumni/colyer-white.jpg",
     "backTitle": "RHP",
     "backLine": "Current · Lindsey Wilson Blue Raiders",
+    "classYear": "",
+    "school": "Lindsey Wilson",
+    "level": "College",
     "stats": [
       ["School", "Lindsey Wilson"],
       ["Somerset", "Briar Jumpers"],
@@ -14,12 +18,16 @@
     "links": [{ "label": "College bio" }]
   },
   {
+    "id": "caynan-sizemore",
     "name": "Caynan Sizemore",
     "number": "4",
     "line": "Somerset ’26 · Rend Lake",
     "photo": "assets/img/alumni/caynan-sizemore.jpg",
     "backTitle": "SS / INF",
     "backLine": "2026– · Rend Lake Warriors",
+    "classYear": "2026",
+    "school": "Rend Lake",
+    "level": "College",
     "stats": [
       ["Somerset", "Class of 2026"],
       ["College", "Rend Lake"],
@@ -31,12 +39,16 @@
     ]
   },
   {
+    "id": "griffin-loy",
     "name": "Griffin Loy",
     "number": "",
     "line": "University of Virginia",
     "photo": "assets/img/alumni/griffin-loy.jpg",
     "backTitle": "RHP",
     "backLine": "Current · Virginia Cavaliers",
+    "classYear": "",
+    "school": "Virginia",
+    "level": "NCAA D1",
     "stats": [
       ["School", "Virginia"],
       ["Somerset", "Briar Jumpers"],
@@ -45,12 +57,16 @@
     "links": [{ "label": "College bio" }]
   },
   {
+    "id": "kole-grundy",
     "name": "Kole Grundy",
     "number": "10",
     "line": "Somerset ’26 · Georgia Southern",
     "photo": "assets/img/alumni/kole-grundy.jpg",
     "backTitle": "RHP / 3B",
     "backLine": "2026– · Georgia Southern Eagles",
+    "classYear": "2026",
+    "school": "Georgia Southern",
+    "level": "NCAA D1",
     "stats": [
       ["12th Region", "POY"],
       ["All-State", "First team"],
@@ -61,12 +77,16 @@
     ]
   },
   {
+    "id": "raygan-new",
     "name": "Raygan New",
     "number": "",
     "line": "Bellarmine University",
     "photo": "assets/img/alumni/raygan-new.jpg",
     "backTitle": "INF / OF",
     "backLine": "Current · Bellarmine Knights",
+    "classYear": "",
+    "school": "Bellarmine",
+    "level": "NCAA",
     "stats": [
       ["School", "Bellarmine"],
       ["Somerset", "Briar Jumpers"],
@@ -75,12 +95,16 @@
     "links": [{ "label": "College bio" }]
   },
   {
+    "id": "cole-reynolds",
     "name": "Cole Reynolds",
     "number": "",
     "line": "University of the Cumberlands",
     "photo": "assets/img/alumni/cole-reynolds.jpg",
     "backTitle": "UTIL",
     "backLine": "Current · Cumberlands Patriots",
+    "classYear": "",
+    "school": "Cumberlands",
+    "level": "College",
     "stats": [
       ["School", "Cumberlands"],
       ["Somerset", "Briar Jumpers"],

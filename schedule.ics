@@ -1,0 +1,494 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Somerset Jumpers Baseball//2027 Schedule//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Jumpers Baseball 2027
+X-WR-CALDESC:Somerset High School Briar Jumpers baseball. Charlie Taylor Field.
+X-WR-TIMEZONE:America/New_York
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:2027-03-06-washington-county@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270306T120000
+DTEND;TZID=America/New_York:20270306T143000
+SUMMARY:Jumpers at Washington County (V/JV)
+LOCATION:Washington County High School
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nAway · Washington County H
+ igh School\nScrimmage\nSubscribe to this calendar for updates. Do not imp
+ ort once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-13-montgomery-county@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270313T130000
+DTEND;TZID=America/New_York:20270313T153000
+SUMMARY:Jumpers vs Montgomery County (V/JV)
+LOCATION:Charlie Taylor Field\, 301 College St\, Somerset\, KY
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nHome · Charlie Taylor Fiel
+ d\nScrimmage\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-16-campbellsville@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270316T180000
+DTEND;TZID=America/New_York:20270316T203000
+SUMMARY:Jumpers vs Campbellsville (V/JV)
+LOCATION:Charlie Taylor Field\, 301 College St\, Somerset\, KY
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nHome · Charlie Taylor Fiel
+ d\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-17-russell-county@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270317T180000
+DTEND;TZID=America/New_York:20270317T203000
+SUMMARY:Jumpers vs Russell County (V/JV)
+LOCATION:Charlie Taylor Field\, 301 College St\, Somerset\, KY
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nHome · Charlie Taylor Fiel
+ d\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-19-knox-central@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270319T180000
+DTEND;TZID=America/New_York:20270319T203000
+SUMMARY:Jumpers vs Knox Central (V/JV)
+LOCATION:Charlie Taylor Field\, 301 College St\, Somerset\, KY
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nHome · Charlie Taylor Fiel
+ d\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-20-whitley@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270320T120000
+DTEND;TZID=America/New_York:20270320T143000
+SUMMARY:Jumpers at Whitley (V/JV)
+LOCATION:Whitley County High School
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nAway · Whitley County High
+  School\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-22-corbin@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270322T180000
+DTEND;TZID=America/New_York:20270322T203000
+SUMMARY:Jumpers at Corbin (Varsity Only)
+LOCATION:Corbin High School
+DESCRIPTION:Somerset Briar Jumpers\nTeam: Varsity Only\nAway · Corbin High
+  School\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-23-madison-central@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270323T180000
+DTEND;TZID=America/New_York:20270323T203000
+SUMMARY:Jumpers vs Madison Central (Varsity Only)
+LOCATION:Charlie Taylor Field\, 301 College St\, Somerset\, KY
+DESCRIPTION:Somerset Briar Jumpers\nTeam: Varsity Only\nHome · Charlie Tay
+ lor Field\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-24-corbin-jv@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270324T180000
+DTEND;TZID=America/New_York:20270324T200000
+SUMMARY:Jumpers vs Corbin (JV Only)
+LOCATION:Charlie Taylor Field\, 301 College St\, Somerset\, KY
+DESCRIPTION:Somerset Briar Jumpers\nTeam: JV Only\nHome · Charlie Taylor F
+ ield\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-25-wayne-county@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270325T180000
+DTEND;TZID=America/New_York:20270325T203000
+SUMMARY:Jumpers at Wayne County (V/JV)
+LOCATION:Wayne County High School
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nAway · Wayne County High S
+ chool\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-27-harrison-county@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270327T140000
+DTEND;TZID=America/New_York:20270327T163000
+SUMMARY:Jumpers at Harrison County (Varsity Only)
+LOCATION:Harrison County High School
+DESCRIPTION:Somerset Briar Jumpers\nTeam: Varsity Only\nAway · Harrison Co
+ unty High School\nSubscribe to this calendar for updates. Do not import o
+ nce.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-29-boyle@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270329T180000
+DTEND;TZID=America/New_York:20270329T203000
+SUMMARY:Jumpers at Boyle (V/JV)
+LOCATION:Boyle County High School
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nAway · Boyle County High S
+ chool\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-03-31-danville-all-a@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270331T180000
+DTEND;TZID=America/New_York:20270331T203000
+SUMMARY:Jumpers at Danville — All “A” (Varsity Only)
+LOCATION:Danville High School
+DESCRIPTION:Somerset Briar Jumpers\nTeam: Varsity Only\nAway · Danville Hi
+ gh School\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-01-southwestern@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270401T180000
+DTEND;TZID=America/New_York:20270401T203000
+SUMMARY:Jumpers at Southwestern (V/JV)
+LOCATION:Southwestern High School
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nAway · Southwestern High S
+ chool\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-05-spring-break@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;VALUE=DATE:20270405
+DTEND;VALUE=DATE:20270411
+SUMMARY:Jumpers · Spring Break (V/JV)
+LOCATION:Destin\, Florida
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nAway · Destin\, Florida\nV
+ arsity/JV · game schedule and times TBD\nSubscribe to this calendar for u
+ pdates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-12-south-laurel@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270412T180000
+DTEND;TZID=America/New_York:20270412T203000
+SUMMARY:Jumpers at South Laurel (V/JV)
+LOCATION:South Laurel High School
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nAway · South Laurel High S
+ chool\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-13-rockcastle@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270413T180000
+DTEND;TZID=America/New_York:20270413T203000
+SUMMARY:Jumpers at Rockcastle (V/JV)
+LOCATION:Rockcastle County High School
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nAway · Rockcastle County H
+ igh School\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-15-rockcastle@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270415T180000
+DTEND;TZID=America/New_York:20270415T203000
+SUMMARY:Jumpers vs Rockcastle (V/JV)
+LOCATION:Charlie Taylor Field\, 301 College St\, Somerset\, KY
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nHome · Charlie Taylor Fiel
+ d\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-16-north-laurel@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270416T180000
+DTEND;TZID=America/New_York:20270416T203000
+SUMMARY:Jumpers vs North Laurel (V/JV)
+LOCATION:Charlie Taylor Field\, 301 College St\, Somerset\, KY
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nHome · Charlie Taylor Fiel
+ d\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-20-pulaski@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270420T180000
+DTEND;TZID=America/New_York:20270420T203000
+SUMMARY:Jumpers vs Pulaski (V/JV)
+LOCATION:Charlie Taylor Field\, 301 College St\, Somerset\, KY
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nHome · Charlie Taylor Fiel
+ d\nDistrict\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-21-russell-jv-1@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270421T174500
+DTEND;TZID=America/New_York:20270421T191500
+SUMMARY:Jumpers vs Russell County — JV DH · Game 1 (JV Only)
+LOCATION:Charlie Taylor Field\, 301 College St\, Somerset\, KY
+DESCRIPTION:Somerset Briar Jumpers\nTeam: JV Only\nHome · Charlie Taylor F
+ ield\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-21-russell-jv-2@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270421T193000
+DTEND;TZID=America/New_York:20270421T210000
+SUMMARY:Jumpers vs Russell County — JV DH · Game 2 (JV Only)
+LOCATION:Charlie Taylor Field\, 301 College St\, Somerset\, KY
+DESCRIPTION:Somerset Briar Jumpers\nTeam: JV Only\nHome · Charlie Taylor F
+ ield\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-22-pulaski@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270422T180000
+DTEND;TZID=America/New_York:20270422T203000
+SUMMARY:Jumpers at Pulaski (V/JV)
+LOCATION:Pulaski County High School
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nAway · Pulaski County High
+  School\nDistrict\nSubscribe to this calendar for updates. Do not import 
+ once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-23-whitley@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270423T180000
+DTEND;TZID=America/New_York:20270423T203000
+SUMMARY:Jumpers vs Whitley (V/JV)
+LOCATION:Charlie Taylor Field\, 301 College St\, Somerset\, KY
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nHome · Charlie Taylor Fiel
+ d\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-26-east-jessamine@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270426T180000
+DTEND;TZID=America/New_York:20270426T203000
+SUMMARY:Jumpers at East Jessamine (V/JV)
+LOCATION:East Jessamine High School
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nAway · East Jessamine High
+  School\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-27-casey@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270427T180000
+DTEND;TZID=America/New_York:20270427T203000
+SUMMARY:Jumpers vs Casey (V/JV)
+LOCATION:Charlie Taylor Field\, 301 College St\, Somerset\, KY
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nHome · Charlie Taylor Fiel
+ d\nDistrict\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-29-casey@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270429T180000
+DTEND;TZID=America/New_York:20270429T203000
+SUMMARY:Jumpers at Casey (V/JV)
+LOCATION:Casey County High School
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nAway · Casey County High S
+ chool\nDistrict\nSubscribe to this calendar for updates. Do not import on
+ ce.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-04-30-southwestern@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270430T180000
+DTEND;TZID=America/New_York:20270430T203000
+SUMMARY:Jumpers vs Southwestern (V/JV)
+LOCATION:Charlie Taylor Field\, 301 College St\, Somerset\, KY
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nHome · Charlie Taylor Fiel
+ d\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-01-prom@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;VALUE=DATE:20270501
+DTEND;VALUE=DATE:20270502
+SUMMARY:Jumpers · Prom
+LOCATION:Somerset High School
+DESCRIPTION:Somerset Briar Jumpers\nProm\nNo game\nSubscribe to this calen
+ dar for updates. Do not import once.
+TRANSP:TRANSPARENT
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-04-corbin-senior@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270504T180000
+DTEND;TZID=America/New_York:20270504T203000
+SUMMARY:Jumpers vs Corbin — Senior Night (V/JV)
+LOCATION:Charlie Taylor Field\, 301 College St\, Somerset\, KY
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nHome · Charlie Taylor Fiel
+ d\nSenior Night\nSubscribe to this calendar for updates. Do not import on
+ ce.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-06-clay-county@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270506T180000
+DTEND;TZID=America/New_York:20270506T203000
+SUMMARY:Jumpers at Clay County (V/JV)
+LOCATION:Clay County High School
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nAway · Clay County High Sc
+ hool\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-07-washington-alumni@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270507T190000
+DTEND;TZID=America/New_York:20270507T213000
+SUMMARY:Jumpers vs Washington County — Alumni Night (Varsity Only)
+LOCATION:Charlie Taylor Field\, 301 College St\, Somerset\, KY
+DESCRIPTION:Somerset Briar Jumpers\nTeam: Varsity Only\nHome · Charlie Tay
+ lor Field\nAlumni Night\nSubscribe to this calendar for updates. Do not i
+ mport once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-10-campbellsville@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270510T180000
+DTEND;TZID=America/New_York:20270510T203000
+SUMMARY:Jumpers at Campbellsville (V/JV)
+LOCATION:Campbellsville High School
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nAway · Campbellsville High
+  School\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-11-wayne-county@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270511T180000
+DTEND;TZID=America/New_York:20270511T203000
+SUMMARY:Jumpers vs Wayne County (V/JV)
+LOCATION:Charlie Taylor Field\, 301 College St\, Somerset\, KY
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nHome · Charlie Taylor Fiel
+ d\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-15-triangle@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;VALUE=DATE:20270515
+DTEND;VALUE=DATE:20270516
+SUMMARY:Jumpers at Russell County & Glasgow — Varsity Triangle (Varsity Tr
+ iangle)
+LOCATION:Russell County High School
+DESCRIPTION:Somerset Briar Jumpers\nTeam: Varsity Triangle\nAway · Russell
+  County High School\nVarsity Triangle\nTime TBD\nSubscribe to this calend
+ ar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-17-south-laurel@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270517T180000
+DTEND;TZID=America/New_York:20270517T203000
+SUMMARY:Jumpers vs South Laurel (V/JV)
+LOCATION:Charlie Taylor Field\, 301 College St\, Somerset\, KY
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nHome · Charlie Taylor Fiel
+ d\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-18-knox-central@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270518T180000
+DTEND;TZID=America/New_York:20270518T203000
+SUMMARY:Jumpers at Knox Central (V/JV)
+LOCATION:Knox Central High School
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nAway · Knox Central High S
+ chool\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+BEGIN:VEVENT
+UID:2027-05-21-clay-county@jumpersbaseball
+DTSTAMP:20260923T162000Z
+DTSTART;TZID=America/New_York:20270521T180000
+DTEND;TZID=America/New_York:20270521T203000
+SUMMARY:Jumpers vs Clay County (V/JV)
+LOCATION:Charlie Taylor Field\, 301 College St\, Somerset\, KY
+DESCRIPTION:Somerset Briar Jumpers\nTeam: V/JV\nHome · Charlie Taylor Fiel
+ d\nSubscribe to this calendar for updates. Do not import once.
+TRANSP:OPAQUE
+STATUS:CONFIRMED
+END:VEVENT
+END:VCALENDAR

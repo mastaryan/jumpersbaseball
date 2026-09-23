@@ -1,0 +1,513 @@
+{
+  "season": "2027",
+  "title": "Somerset Baseball 2027",
+  "revised": "2026-09-23",
+  "source": "Printed sheet pages 1\u20132",
+  "note": "Full regular-season sheet through May 21. Key: ** scrimmage, ^^ Senior Night, ^* Alumni Night. District = Pulaski and Casey series.",
+  "home": {
+    "name": "Charlie Taylor Field",
+    "school": "Somerset High School",
+    "address": "301 College St, Somerset, KY"
+  },
+  "games": [
+    {
+      "id": "2027-03-06-washington-county",
+      "date": "2027-03-06",
+      "kick": "12:00",
+      "end": "14:30",
+      "opponent": "Washington County",
+      "site": "WCHS",
+      "venue": "Washington County High School",
+      "home": false,
+      "team": "V/JV",
+      "kind": "game",
+      "tags": [
+        "scrimmage"
+      ]
+    },
+    {
+      "id": "2027-03-13-montgomery-county",
+      "date": "2027-03-13",
+      "kick": "13:00",
+      "end": "15:30",
+      "opponent": "Montgomery County",
+      "site": "SHS",
+      "venue": "Charlie Taylor Field",
+      "home": true,
+      "team": "V/JV",
+      "kind": "game",
+      "tags": [
+        "scrimmage"
+      ]
+    },
+    {
+      "id": "2027-03-16-campbellsville",
+      "date": "2027-03-16",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Campbellsville",
+      "site": "SHS",
+      "venue": "Charlie Taylor Field",
+      "home": true,
+      "team": "V/JV",
+      "kind": "game"
+    },
+    {
+      "id": "2027-03-17-russell-county",
+      "date": "2027-03-17",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Russell County",
+      "site": "SHS",
+      "venue": "Charlie Taylor Field",
+      "home": true,
+      "team": "V/JV",
+      "kind": "game"
+    },
+    {
+      "id": "2027-03-19-knox-central",
+      "date": "2027-03-19",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Knox Central",
+      "site": "SHS",
+      "venue": "Charlie Taylor Field",
+      "home": true,
+      "team": "V/JV",
+      "kind": "game"
+    },
+    {
+      "id": "2027-03-20-whitley",
+      "date": "2027-03-20",
+      "kick": "12:00",
+      "end": "14:30",
+      "opponent": "Whitley",
+      "site": "Whitley",
+      "venue": "Whitley County High School",
+      "home": false,
+      "team": "V/JV",
+      "kind": "game"
+    },
+    {
+      "id": "2027-03-22-corbin",
+      "date": "2027-03-22",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Corbin",
+      "site": "Corbin",
+      "venue": "Corbin High School",
+      "home": false,
+      "team": "Varsity Only",
+      "kind": "game"
+    },
+    {
+      "id": "2027-03-23-madison-central",
+      "date": "2027-03-23",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Madison Central",
+      "site": "SHS",
+      "venue": "Charlie Taylor Field",
+      "home": true,
+      "team": "Varsity Only",
+      "kind": "game"
+    },
+    {
+      "id": "2027-03-24-corbin-jv",
+      "date": "2027-03-24",
+      "kick": "18:00",
+      "end": "20:00",
+      "opponent": "Corbin",
+      "site": "SHS",
+      "venue": "Charlie Taylor Field",
+      "home": true,
+      "team": "JV Only",
+      "kind": "game"
+    },
+    {
+      "id": "2027-03-25-wayne-county",
+      "date": "2027-03-25",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Wayne County",
+      "site": "Wayne",
+      "venue": "Wayne County High School",
+      "home": false,
+      "team": "V/JV",
+      "kind": "game"
+    },
+    {
+      "id": "2027-03-27-harrison-county",
+      "date": "2027-03-27",
+      "kick": "14:00",
+      "end": "16:30",
+      "opponent": "Harrison County",
+      "site": "HCHS",
+      "venue": "Harrison County High School",
+      "home": false,
+      "team": "Varsity Only",
+      "kind": "game"
+    },
+    {
+      "id": "2027-03-29-boyle",
+      "date": "2027-03-29",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Boyle",
+      "site": "Boyle",
+      "venue": "Boyle County High School",
+      "home": false,
+      "team": "V/JV",
+      "kind": "game"
+    },
+    {
+      "id": "2027-03-31-danville-all-a",
+      "date": "2027-03-31",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Danville",
+      "label": "All \u201cA\u201d",
+      "site": "Danville",
+      "venue": "Danville High School",
+      "home": false,
+      "team": "Varsity Only",
+      "kind": "game"
+    },
+    {
+      "id": "2027-04-01-southwestern",
+      "date": "2027-04-01",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Southwestern",
+      "site": "SWHS",
+      "venue": "Southwestern High School",
+      "home": false,
+      "team": "V/JV",
+      "kind": "game"
+    },
+    {
+      "id": "2027-04-05-spring-break",
+      "date": "2027-04-05",
+      "endDate": "2027-04-10",
+      "kick": null,
+      "opponent": "Spring Break",
+      "site": "Destin, FL",
+      "venue": "Destin, Florida",
+      "home": false,
+      "team": "V/JV",
+      "kind": "trip",
+      "note": "Varsity/JV \u00b7 game schedule and times TBD"
+    },
+    {
+      "id": "2027-04-12-south-laurel",
+      "date": "2027-04-12",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "South Laurel",
+      "site": "South Laurel",
+      "venue": "South Laurel High School",
+      "home": false,
+      "team": "V/JV",
+      "kind": "game"
+    },
+    {
+      "id": "2027-04-13-rockcastle",
+      "date": "2027-04-13",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Rockcastle",
+      "site": "Rockcastle",
+      "venue": "Rockcastle County High School",
+      "home": false,
+      "team": "V/JV",
+      "kind": "game"
+    },
+    {
+      "id": "2027-04-15-rockcastle",
+      "date": "2027-04-15",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Rockcastle",
+      "site": "SHS",
+      "venue": "Charlie Taylor Field",
+      "home": true,
+      "team": "V/JV",
+      "kind": "game"
+    },
+    {
+      "id": "2027-04-16-north-laurel",
+      "date": "2027-04-16",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "North Laurel",
+      "site": "SHS",
+      "venue": "Charlie Taylor Field",
+      "home": true,
+      "team": "V/JV",
+      "kind": "game"
+    },
+    {
+      "id": "2027-04-20-pulaski",
+      "date": "2027-04-20",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Pulaski",
+      "site": "SHS",
+      "venue": "Charlie Taylor Field",
+      "home": true,
+      "team": "V/JV",
+      "kind": "game",
+      "tags": [
+        "district"
+      ]
+    },
+    {
+      "id": "2027-04-21-russell-jv-1",
+      "date": "2027-04-21",
+      "kick": "17:45",
+      "end": "19:15",
+      "opponent": "Russell County",
+      "label": "JV DH \u00b7 Game 1",
+      "site": "SHS",
+      "venue": "Charlie Taylor Field",
+      "home": true,
+      "team": "JV Only",
+      "kind": "game"
+    },
+    {
+      "id": "2027-04-21-russell-jv-2",
+      "date": "2027-04-21",
+      "kick": "19:30",
+      "end": "21:00",
+      "opponent": "Russell County",
+      "label": "JV DH \u00b7 Game 2",
+      "site": "SHS",
+      "venue": "Charlie Taylor Field",
+      "home": true,
+      "team": "JV Only",
+      "kind": "game"
+    },
+    {
+      "id": "2027-04-22-pulaski",
+      "date": "2027-04-22",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Pulaski",
+      "site": "Pulaski",
+      "venue": "Pulaski County High School",
+      "home": false,
+      "team": "V/JV",
+      "kind": "game",
+      "tags": [
+        "district"
+      ]
+    },
+    {
+      "id": "2027-04-23-whitley",
+      "date": "2027-04-23",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Whitley",
+      "site": "SHS",
+      "venue": "Charlie Taylor Field",
+      "home": true,
+      "team": "V/JV",
+      "kind": "game"
+    },
+    {
+      "id": "2027-04-26-east-jessamine",
+      "date": "2027-04-26",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "East Jessamine",
+      "site": "EJHS",
+      "venue": "East Jessamine High School",
+      "home": false,
+      "team": "V/JV",
+      "kind": "game"
+    },
+    {
+      "id": "2027-04-27-casey",
+      "date": "2027-04-27",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Casey",
+      "site": "SHS",
+      "venue": "Charlie Taylor Field",
+      "home": true,
+      "team": "V/JV",
+      "kind": "game",
+      "tags": [
+        "district"
+      ]
+    },
+    {
+      "id": "2027-04-29-casey",
+      "date": "2027-04-29",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Casey",
+      "site": "Casey",
+      "venue": "Casey County High School",
+      "home": false,
+      "team": "V/JV",
+      "kind": "game",
+      "tags": [
+        "district"
+      ]
+    },
+    {
+      "id": "2027-04-30-southwestern",
+      "date": "2027-04-30",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Southwestern",
+      "site": "SHS",
+      "venue": "Charlie Taylor Field",
+      "home": true,
+      "team": "V/JV",
+      "kind": "game"
+    },
+    {
+      "id": "2027-05-01-prom",
+      "date": "2027-05-01",
+      "kick": null,
+      "opponent": "Prom",
+      "site": "\u2014",
+      "venue": "Somerset High School",
+      "home": true,
+      "team": "",
+      "kind": "off",
+      "tags": [
+        "prom"
+      ],
+      "note": "No game"
+    },
+    {
+      "id": "2027-05-04-corbin-senior",
+      "date": "2027-05-04",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Corbin",
+      "site": "SHS",
+      "venue": "Charlie Taylor Field",
+      "home": true,
+      "team": "V/JV",
+      "kind": "game",
+      "tags": [
+        "senior"
+      ],
+      "label": "Senior Night"
+    },
+    {
+      "id": "2027-05-06-clay-county",
+      "date": "2027-05-06",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Clay County",
+      "site": "CCHS",
+      "venue": "Clay County High School",
+      "home": false,
+      "team": "V/JV",
+      "kind": "game"
+    },
+    {
+      "id": "2027-05-07-washington-alumni",
+      "date": "2027-05-07",
+      "kick": "19:00",
+      "end": "21:30",
+      "opponent": "Washington County",
+      "site": "SHS",
+      "venue": "Charlie Taylor Field",
+      "home": true,
+      "team": "Varsity Only",
+      "kind": "game",
+      "tags": [
+        "alumni"
+      ],
+      "label": "Alumni Night"
+    },
+    {
+      "id": "2027-05-10-campbellsville",
+      "date": "2027-05-10",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Campbellsville",
+      "site": "Campbellsville",
+      "venue": "Campbellsville High School",
+      "home": false,
+      "team": "V/JV",
+      "kind": "game"
+    },
+    {
+      "id": "2027-05-11-wayne-county",
+      "date": "2027-05-11",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Wayne County",
+      "site": "SHS",
+      "venue": "Charlie Taylor Field",
+      "home": true,
+      "team": "V/JV",
+      "kind": "game"
+    },
+    {
+      "id": "2027-05-15-triangle",
+      "date": "2027-05-15",
+      "kick": null,
+      "opponent": "Russell County & Glasgow",
+      "site": "RCHS",
+      "venue": "Russell County High School",
+      "home": false,
+      "team": "Varsity Triangle",
+      "kind": "game",
+      "tags": [
+        "triangle"
+      ],
+      "label": "Varsity Triangle",
+      "note": "Time TBD"
+    },
+    {
+      "id": "2027-05-17-south-laurel",
+      "date": "2027-05-17",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "South Laurel",
+      "site": "SHS",
+      "venue": "Charlie Taylor Field",
+      "home": true,
+      "team": "V/JV",
+      "kind": "game"
+    },
+    {
+      "id": "2027-05-18-knox-central",
+      "date": "2027-05-18",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Knox Central",
+      "site": "Knox",
+      "venue": "Knox Central High School",
+      "home": false,
+      "team": "V/JV",
+      "kind": "game"
+    },
+    {
+      "id": "2027-05-21-clay-county",
+      "date": "2027-05-21",
+      "kick": "18:00",
+      "end": "20:30",
+      "opponent": "Clay County",
+      "site": "SHS",
+      "venue": "Charlie Taylor Field",
+      "home": true,
+      "team": "V/JV",
+      "kind": "game"
+    }
+  ],
+  "key": {
+    "**": "Scrimmage",
+    "^^": "Senior Night",
+    "^*": "Alumni Night",
+    "district": "Pulaski and Casey series"
+  }
+}

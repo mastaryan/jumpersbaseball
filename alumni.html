@@ -10,17 +10,47 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/app.css" />
 </head>
-<body>
+<body class="alumni-page">
+  <div class="progress" id="progress"></div>
+  <a class="skip" href="#carousel">Skip to alumni</a>
   <nav class="top" id="site-nav"></nav>
 
-  <header class="page-hero">
-    <p class="kicker">The next level</p>
-    <h1 style="font-size:clamp(40px,6vw,72px)">Alumni</h1>
-    <p class="lede">College and professional Jumpers. Current roster first. Full archive by class when the list is ready. Gold chip reserved for affiliated / MLB.</p>
+  <header class="page-hero roster-hero">
+    <p class="kicker rise">The next level</p>
+    <h1 class="rise rise-2">Alumni</h1>
+    <div class="gold-line rise rise-3"></div>
+    <p class="lede rise rise-3">College and professional Jumpers. The slider holds the current graphic. Flip the cards for the sheet. Gold chip is reserved for affiliated / MLB.</p>
   </header>
-  <section class="block" style="padding-top:12px">
-    <div class="wrap">
+
+  <section class="alum-stage" id="carousel">
+    <div class="alum-readout">
       <p class="kicker">Now playing</p>
+      <h2 id="alum-name">Colyer White</h2>
+      <p class="shelf-meta" id="alum-meta">Lindsey Wilson University</p>
+    </div>
+
+    <div class="alum-scene" id="alum-scene" tabindex="0" aria-label="Alumni carousel">
+      <div class="alum-track" id="alum-track"></div>
+    </div>
+
+    <div class="orbit-nav shelf-nav">
+      <button type="button" id="alum-prev" aria-label="Previous alumnus">‹</button>
+      <span id="alum-count">1 / 6</span>
+      <button type="button" id="alum-next" aria-label="Next alumnus">›</button>
+    </div>
+    <div class="alum-dots" id="alum-dots"></div>
+    <p class="cyl-hint">Drag · click a neighbor · hover pauses</p>
+  </section>
+
+  <section class="block roster-grid-block">
+    <div class="wrap">
+      <div class="roster-tools">
+        <div>
+          <p class="kicker">The cards</p>
+          <h2>Flip the next level.</h2>
+        </div>
+        <p class="meta">Same object as the roster. Back holds the school and the honors.</p>
+      </div>
       <div class="grid" id="alumni-grid"></div>
     </div>
   </section>
