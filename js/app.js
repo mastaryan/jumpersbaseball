@@ -93,7 +93,12 @@ function bindFlips(root = document) {
   });
 }
 
+function isDeck() {
+  return window.matchMedia("(max-width: 800px)").matches;
+}
+
 function bindTilt(root = document) {
+  if (window.matchMedia("(hover: none)").matches) return;
   root.querySelectorAll(".card, .coach, .hat-ph").forEach((el) => {
     el.addEventListener("mousemove", (e) => {
       const b = el.getBoundingClientRect();
@@ -431,26 +436,37 @@ function bindCoachCylinder(staff) {
   let timer = 0;
 
   const size = () => {
-    const slim = window.innerWidth < 800;
-    const w = slim ? 180 : 240;
-    const h = slim ? 270 : 360;
-    const radius = Math.round((w / 2) / Math.tan(Math.PI / n) * (slim ? 1.55 : 1.9));
+    const slim = isDeck();
+    scene.classList.toggle("is-deck", slim);
+    ring.classList.toggle("is-deck", slim);
+    if (slim) {
+      scene.style.height = "";
+      ring.style.transform = "";
+      return;
+    }
+    const w = 240;
+    const h = 360;
+    const radius = Math.round((w / 2) / Math.tan(Math.PI / n) * 1.9);
     ring.style.setProperty("--w", `${w}px`);
     ring.style.setProperty("--h", `${h}px`);
     ring.style.setProperty("--radius", `${radius}px`);
-    ring.style.setProperty("--tilt", slim ? "-8deg" : "-12deg");
-    scene.style.height = slim ? "440px" : "560px";
+    ring.style.setProperty("--tilt", "-12deg");
+    scene.style.height = "560px";
   };
 
   const paint = (animate = true) => {
     const coach = staff[index];
-    if (!animate) scene.classList.add("is-drag");
-    ring.style.setProperty("--rot", `${-index * step}deg`);
-    rot = -index * step;
     cards.forEach((card, i) => card.classList.toggle("is-front", i === index));
     if (nameEl) nameEl.textContent = coach.name;
     if (metaEl) metaEl.textContent = `${coach.role} · ${coach.years}`;
     if (countEl) countEl.textContent = `${index + 1} / ${n}`;
+    if (isDeck()) {
+      cards[index]?.scrollIntoView({ inline: "center", block: "nearest", behavior: animate ? "smooth" : "auto" });
+      return;
+    }
+    if (!animate) scene.classList.add("is-drag");
+    ring.style.setProperty("--rot", `${-index * step}deg`);
+    rot = -index * step;
     if (!animate) requestAnimationFrame(() => scene.classList.remove("is-drag"));
   };
 
@@ -460,6 +476,7 @@ function bindCoachCylinder(staff) {
   };
 
   const tick = () => {
+    if (isDeck()) return;
     if (spinning && !hovering && !dragging) go(1);
   };
 
@@ -635,6 +652,12 @@ function bindAlumniCarousel(alumni) {
       slide.style.zIndex = String(20 - Math.abs(offset));
     });
     dots?.querySelectorAll("button").forEach((b, i) => b.classList.toggle("is-on", i === index));
+    if (isDeck()) {
+      scene.classList.add("is-deck");
+      slides[index]?.scrollIntoView({ inline: "center", block: "nearest", behavior: "smooth" });
+    } else {
+      scene.classList.remove("is-deck");
+    }
   };
 
   const go = (dir) => {
@@ -644,7 +667,7 @@ function bindAlumniCarousel(alumni) {
 
   const arm = () => {
     window.clearInterval(timer);
-    if (!reduced) timer = window.setInterval(() => {
+    if (!reduced && !isDeck()) timer = window.setInterval(() => {
       if (!hovering && !dragging) go(1);
     }, 3400);
   };
@@ -830,6 +853,9 @@ function bindHatShelf(hats) {
     if (metaEl) metaEl.textContent = `${hat.price} · ${hat.model}`;
     if (countEl) countEl.textContent = `${index + 1} / ${hats.length}`;
     cards.forEach((card, i) => card.classList.toggle("is-lead", i === index));
+    if (isDeck()) {
+      cards[index]?.scrollIntoView({ inline: "center", block: "nearest", behavior: "smooth" });
+    }
     if (select) {
       const opt = [...select.options].find((o) => o.value === hat.name);
       if (opt) {
@@ -1052,13 +1078,7 @@ async function renderSchedulePage() {
     const next = upcoming.find((g) => g.kind === "game") || upcoming[0] || data.games[data.games.length - 1];
     const hero = document.getElementById("hero-slot");
     if (hero && next) hero.innerHTML = heroHTML(next, data);
-    const rest = upcoming.filter((g) => g.id !== next.id);
-    list.innerHTML = [
-      ...rest.map(rowHTML),
-      past.length
-        ? `<p class="kicker" style="margin:36px 0 12px">Played</p>` + past.map(rowHTML).join("")
-        : "",
-    ].join("");
+    list.innerHTML = data.games.map(rowHTML).join("");
     bindSchedFilters();
   } catch (e) {
     list.innerHTML = `<p class="meta">Serve this folder over http to load the 2027 rail.</p>`;

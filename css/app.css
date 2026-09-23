@@ -1266,10 +1266,103 @@ footer.site a { color: var(--gold-2); }
   }
   .shelf-plate { display: none; }
   .shelf-head h2 { font-size: 32px; }
-  .alum-scene { height: 460px; }
-  .alum-slide { height: 400px; top: 16px; }
-  .hat-shelf { grid-template-columns: 1fr; max-width: 360px; }
-  .hat-card { height: 440px; }
+
+  .cyl-stage,
+  .alum-stage,
+  .hat-stage { overflow: visible; }
+
+  .cyl-scene,
+  .cyl-scene.is-deck {
+    height: auto !important;
+    perspective: none;
+    touch-action: pan-x;
+  }
+  .cyl-ring,
+  .cyl-ring.is-deck {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 0;
+    gap: 14px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 8px 8vw 28px;
+    transform: none !important;
+    transform-style: flat;
+  }
+  .cyl-card {
+    position: relative;
+    inset: auto;
+    flex: 0 0 min(280px, 78vw);
+    width: min(280px, 78vw);
+    height: 420px;
+    transform: none !important;
+    backface-visibility: visible;
+    -webkit-backface-visibility: visible;
+    scroll-snap-align: center;
+  }
+
+  .alum-scene,
+  .alum-scene.is-deck {
+    height: auto;
+    perspective: none;
+    touch-action: pan-x;
+  }
+  .alum-track {
+    display: flex;
+    height: auto;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    transform-style: flat;
+    padding: 8px 8vw 28px;
+    gap: 14px;
+  }
+  .alum-slide,
+  .alum-slide.is-active,
+  .alum-slide.is-prev,
+  .alum-slide.is-next,
+  .alum-slide.is-far {
+    position: relative;
+    left: auto;
+    top: auto;
+    margin-left: 0;
+    flex: 0 0 min(280px, 78vw);
+    width: min(280px, 78vw);
+    height: 420px;
+    transform: none !important;
+    opacity: 1 !important;
+    filter: none;
+    pointer-events: auto;
+    scroll-snap-align: center;
+  }
+
+  .hat-shelf {
+    display: flex;
+    grid-template-columns: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 14px;
+    max-width: none;
+    margin: 8px 0 18px;
+    padding: 8px 2vw 20px;
+  }
+  .hat-card {
+    flex: 0 0 min(320px, 86vw);
+    width: min(320px, 86vw);
+    height: 420px;
+    scroll-snap-align: center;
+  }
+  .card { perspective: none; }
+  .card-inner {
+    transform-style: flat;
+    transform: none !important;
+  }
+  .card .face.back { display: none; transform: none; }
+  .card.is-flipped .face { display: none; }
+  .card.is-flipped .face.back { display: block; }
 }
 
 /* ——— 2027 schedule ——— */
